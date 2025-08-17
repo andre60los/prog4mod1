@@ -1,0 +1,7 @@
+CREATE TABLE misiones_heroes (
+    id INTEGER PRIMARY KEY,
+    id_heroe INTEGER,
+    id_mision INTEGER,
+    FOREIGN KEY (id_heroe) REFERENCES heroes(id),
+    FOREIGN KEY (id_mision) REFERENCES misiones(id)
+);
