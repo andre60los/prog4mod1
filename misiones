@@ -1,0 +1,7 @@
+CREATE TABLE misiones (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    dificultad INTEGER CHECK(dificultad BETWEEN 1 AND 10),
+    localizacion TEXT,
+    recompensa INTEGER CHECK(recompensa >= 0)
+);
