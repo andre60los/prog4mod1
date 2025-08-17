@@ -1,0 +1,6 @@
+CREATE TABLE heroes (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    clase TEXT CHECK(clase IN ('Guerrero', 'Mago', 'Arquero', 'Ladrón', 'Clérigo', 'Paladín')),
+    nivel_experiencia INTEGER CHECK(nivel_experiencia >= 0)
+);
